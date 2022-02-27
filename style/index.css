@@ -1,0 +1,702 @@
+/* Background video section START */
+#video-section {
+    position: relative;
+    width: 100%;
+    height: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+#text-content {
+    text-align: center;
+    z-index: 1;
+}
+
+#bg-video-div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+video {
+    width: 100%;
+}
+
+#video-section-h1 {
+    font-family: sans-serif;
+    font-size: 58px;
+    color: white;
+    -webkit-text-stroke: 1.5px;
+    text-shadow: 5px 5px 10px black;
+    line-height: 70px;
+}
+
+#video-section-p {
+    font-family: sans-serif;
+    font-size: 36px;
+    color: white;
+    -webkit-text-stroke: 0.5px;
+    text-shadow: 5px 5px 10px black;
+    line-height: 46px;
+    letter-spacing: 1px;
+}
+
+#video-section-btn-div {
+    margin-top: 50px;
+}
+
+.video-section-btn {
+    width: 240px;
+    height: 64px;
+    background-color: #D43530;
+    border-radius: 50px;
+    font-size: 20px;
+    font-family: sans-serif;
+    padding: 20px 30px 20px 30px;
+    text-decoration: none;
+    color: white;
+    margin: 0px 5px 0px 5px;
+}
+
+.video-section-btn:hover {
+    filter: brightness(120%);
+}
+
+#view-learning-paths {
+    background-color: #E7682E;
+}
+
+/* Media Quaries */
+@media only screen and (min-width: 375px) and (max-width: 768px) {
+    #video-section {
+        position: relative;
+        width: 100%;
+        height: 275px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+    #video-section-h1 {
+        font-family: sans-serif;
+        font-size: 29px;
+        color: white;
+        -webkit-text-stroke: 1.5px;
+        text-shadow: 5px 5px 10px black;
+        line-height: 35px;
+    }
+
+    #video-section-p {
+        font-family: sans-serif;
+        font-size: 18px;
+        color: white;
+        -webkit-text-stroke: 0.5px;
+        text-shadow: 5px 5px 10px black;
+        line-height: 23px;
+        letter-spacing: 1px;
+    }
+
+    #video-section-btn-div {
+        margin-top: 25px;
+    }
+
+    .video-section-btn {
+        width: 120px;
+        height: 32px;
+        background-color: #D43530;
+        border-radius: 50px;
+        font-size: 16px;
+        font-family: sans-serif;
+        padding: 10px 15px 10px 15px;
+        text-decoration: none;
+        color: white;
+        margin: 0px 2.5px 0px 2.5px;
+    }
+}
+
+/*Media Quesries*/
+/* Screen size 0px to 374px */
+@media only screen and (min-width: 0px) and (max-width: 374px) {
+    #video-section {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+    #video-section-h1 {
+        font-family: sans-serif;
+        font-size: 15px;
+        color: white;
+        -webkit-text-stroke: 0.8px;
+        text-shadow: 5px 5px 10px black;
+        line-height: 18px;
+    }
+
+    #video-section-p {
+        font-family: sans-serif;
+        font-size: 9px;
+        color: white;
+        -webkit-text-stroke: 0.2px;
+        text-shadow: 5px 5px 10px black;
+        line-height: 12px;
+        letter-spacing: 1px;
+    }
+
+    #video-section-btn-div {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .video-section-btn {
+        width: 80%;
+        height: 16px;
+        background-color: #D43530;
+        border-radius: 50px;
+        font-size: 10px;
+        font-family: sans-serif;
+        padding: 5px 7.5px 5px 7.5px;
+        text-decoration: none;
+        color: white;
+        margin: 0px 2.5px 0px 2.5px;
+    }
+
+    #browse-our-courses,
+    #view-learning-paths {
+        margin-bottom: 10px;
+    }
+}
+
+/* Background video section END */
+
+/*Language icon div START */
+#language-icon-section {
+    width: 100%;
+    height: 160px;
+    background-color: #0B0B0B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+.lang-icon {
+    width: 80px;
+    height: 80px;
+    opacity: .7;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.lang-icon:hover {
+    opacity: 110%;
+    width: 90px;
+    height: 90px;
+    transition: opacity .2s;
+    transition: all .2s ease-in-out;
+}
+
+/* Media Quesries */
+@media only screen and (min-width: 375px) and (max-width: 768px) {
+    #language-icon-section {
+        width: 100%;
+        height: fit-content;
+        padding: 8%;
+        background-color: #0B0B0B;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 30px;
+    }
+
+    .lang-icon {
+        width: 60px;
+        height: 60px;
+        opacity: .7;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .lang-icon:hover {
+        opacity: 110%;
+        width: 65px;
+        height: 65px;
+        transition: opacity .2s;
+        transition: all .2s ease-in-out;
+    }
+}
+
+/*Media Quesries*/
+/* Screen size 0px to 374px */
+@media only screen and (min-width: 0px) and (max-width: 374px) {
+    #language-icon-section {
+        width: 100%;
+        height: fit-content;
+        padding: 4%;
+        background-color: #0B0B0B;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 15px;
+    }
+
+    .lang-icon {
+        width: 55px;
+        height: 55px;
+        opacity: .7;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .lang-icon:hover {
+        opacity: 110%;
+        width: 45px;
+        height: 45px;
+        transition: opacity .2s;
+        transition: all .2s ease-in-out;
+    }
+}
+
+
+/*Language icon div END */
+
+/* Twitter div START */
+
+#twitter-div {
+    width: 100%;
+    height: 827px;
+    border: 1px solid transparent;
+    background-color: #09539D;
+    margin: auto;
+}
+
+#twitter-heading-h2 {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 27px;
+    color: white;
+    text-align: center;
+    -webkit-text-stroke: 0.5px;
+    margin-top: 40px;
+}
+
+#twitter-heading-link {
+    color: white;
+    text-decoration: underline;
+}
+
+#twitter-main {
+    width: fit-content;
+    height: 680px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    justify-content: center;
+    border: 1px solid transparent;
+    margin: auto;
+    margin-top: 60px;
+
+}
+
+#main_div {
+    width: 354px;
+    height: fit-content;
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+#icon {
+    width: 30px;
+    height: 30px;
+}
+
+#user_div {
+    display: flex;
+}
+
+#twitt {
+    font-family: sans-serif;
+    font-size: 17px;
+    line-height: 24px;
+    color: #222222;
+}
+
+#user_div {
+    height: 50px;
+    margin-bottom: 25px;
+    border: 1px solid transparent;
+    align-items: center;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: space-between;
+}
+
+#time {
+    font-family: sans-serif;
+    height: 31px;
+    margin-top: 20px;
+    display: flex;
+    align-items: flex-end;
+    border-top: 1px solid lightgrey;
+    color: #8a8a8a;
+    font-size: 14px;
+}
+
+#image {
+    border-radius: 50%;
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    padding: 5px;
+}
+
+#name {
+    margin-right: 95px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: normal;
+    -webkit-text-stroke: 0.5px black;
+    color: #222222;
+}
+
+#user_name {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #8a8a8a;
+}
+
+/* Media Queries */
+@media only screen and (min-width: 375px) and (max-width: 768px) {
+    #twitter-div {
+        width: 100%;
+        height: fit-content;
+        border: 1px solid transparent;
+        background-color: #09539D;
+        margin: auto;
+    }
+
+    #twitter-heading-h2 {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 27px;
+        color: white;
+        text-align: center;
+        -webkit-text-stroke: 0.5px;
+        margin-top: 40px;
+    }
+
+    #twitter-heading-link {
+        color: white;
+        text-decoration: underline;
+    }
+
+    #twitter-main {
+        width: 100%;
+        height: fit-content;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+        justify-content: center;
+        border: 1px solid transparent;
+        margin: auto;
+        margin-top: 60px;
+
+    }
+
+    #main_div {
+        width: 250px;
+        height: fit-content;
+        background-color: white;
+        padding: 25px;
+        border-radius: 10px;
+    }
+
+}
+
+/*Media Quesries*/
+/* Screen size 0px to 374px */
+@media only screen and (min-width: 0px) and (max-width: 374px) {
+    #twitter-div {
+        width: 100%;
+        height: fit-content;
+        border: 1px solid transparent;
+        background-color: #09539D;
+        margin: auto;
+    }
+
+    #twitter-heading-h2 {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 14px;
+        color: white;
+        text-align: center;
+        -webkit-text-stroke: 0.5px;
+        margin-top: 20px;
+    }
+
+    #twitter-heading-link {
+        color: white;
+        text-decoration: underline;
+    }
+
+    #twitter-main {
+        width: fit-content;
+        height: fit-content;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 10px;
+        justify-content: center;
+        border: 1px solid transparent;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    #main_div {
+        width: 250px;
+        height: fit-content;
+        background-color: white;
+        padding: 13px;
+        border-radius: 10px;
+    }
+}
+
+/* Twitter div END */
+
+
+/* Join now div START */
+
+#joinnow-div {
+    width: 100%;
+    height: 600px;
+}
+
+
+#joinnow-div {
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKLW/AAAAF0lEQVQYV2NkQAKMULYvAwPDZhgHLAYAD6kBBEMDSU4AAAAASUVORK5CYII=), radial-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), url(https://static.frontendmasters.com/assets/fm/js/static/bg2.c89a0cad3a.jpg) center no-repeat;
+    background-color: rgba(0, 0, 0, 0);
+    background-position-x: 0%, 0%, center;
+    background-position-y: 0%, 0%, center;
+    background-repeat: repeat, repeat, no-repeat;
+    background-attachment: scroll, scroll, scroll;
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKLW/AAAAF0lEQVQYV2NkQAKMULYvAwPDZhgHLAYAD6kBBEMDSU4AAAAASUVORK5CYII="), radial-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), url("https://static.frontendmasters.com/assets/fm/js/static/bg2.c89a0cad3a.jpg");
+    background-size: auto, auto, auto;
+    background-origin: padding-box, padding-box, padding-box;
+    background-clip: border-box, border-box, border-box;
+    background-size: auto, cover, cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#joinnow-text {
+    font-family: sans-serif;
+    font-size: 36px;
+    color: white;
+    -webkit-text-stroke: 0.5px;
+    text-shadow: 5px 5px 10px black;
+    line-height: 54px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+
+#joinnow-btn {
+    width: 324px;
+    height: 78px;
+    background-color: #c94f17;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-family: sans-serif;
+    color: white;
+    margin-top: 30px;
+}
+
+#joinnow-btn:hover {
+    filter: contrast(90%);
+    filter: brightness(130%);
+}
+
+@media only screen and (min-width: 375px) and (max-width: 768px) {
+    #joinnow-div {
+        width: 100%;
+        height: 300px;
+    }
+
+    #joinnow-text {
+        font-family: sans-serif;
+        font-size: 18px;
+        color: white;
+        -webkit-text-stroke: 0.5px;
+        text-shadow: 5px 5px 10px black;
+        line-height: 27px;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+
+
+    #joinnow-btn {
+        width: 162px;
+        height: 37px;
+        background-color: #c94f17;
+        border-radius: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 15px;
+        font-family: sans-serif;
+        color: white;
+        margin-top: 15px;
+    }
+
+    #joinnow-btn:hover {
+        filter: contrast(90%);
+        filter: brightness(130%);
+    }
+}
+
+/* Media Queries */
+/* Screen 0 to 374px */
+@media only screen and (min-width: 0px) and (max-width: 374px) {
+    #joinnow-div {
+        width: 100%;
+        height: 250px;
+    }
+
+    #joinnow-text {
+        font-family: sans-serif;
+        font-size: 18px;
+        color: white;
+        -webkit-text-stroke: 0.5px;
+        text-shadow: 5px 5px 10px black;
+        line-height: 27px;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+
+
+    #joinnow-btn {
+        width: 162px;
+        height: 37px;
+        background-color: #c94f17;
+        border-radius: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 15px;
+        font-family: sans-serif;
+        color: white;
+        margin-top: 15px;
+    }
+
+    #joinnow-btn:hover {
+        filter: contrast(90%);
+        filter: brightness(130%);
+    }
+}
+
+/* Join now div END */
+
+/* Bootcamp SCC START */
+#bootcamp-div {
+    width: 100%;
+    height: 358px;
+    border: 1px solid transparent;
+    background-image: url("https://static.frontendmasters.com/assets/fm/js/static/bc-ad-bg.5d061b025d.png");
+    background-size: 100% 100%;
+    background-color: #222222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#bootcamp-img {
+    margin-bottom: 40px;
+}
+
+#bootcamp-p {
+    font-family: sans-serif;
+    font-size: 16px;
+    color: white;
+    line-height: 24px;
+    margin-top: 0;
+}
+
+#moreinfo-p {
+    font-family: sans-serif;
+    font-size: 16px;
+    color: #dd625e;
+    line-height: 24px;
+    margin-top: 20px;
+    text-decoration: underline;
+}
+
+#moreinfo-p:hover {
+    cursor: pointer;
+    filter: brightness(125%);
+}
+
+/* Media Queries */
+@media only screen and (min-width: 375px) and (max-width: 768px) {
+    #bootcamp-div {
+        width: 100%;
+        height: 240px;
+        border: 1px solid transparent;
+        background-image: url("https://static.frontendmasters.com/assets/fm/js/static/bc-ad-bg.5d061b025d.png");
+        background-size: 100% 100%;
+        background-color: #222222;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    #bootcamp-img {
+        margin-bottom: 20px;
+        width: 50%;
+        height: 50%;
+    }
+
+    #bootcamp-p {
+        font-family: sans-serif;
+        font-size: 12px;
+        color: white;
+        line-height: 12px;
+        margin-top: 0;
+    }
+
+    #moreinfo-p {
+        font-family: sans-serif;
+        font-size: 10px;
+        color: #dd625e;
+        line-height: 12px;
+        margin-top: 10px;
+        text-decoration: underline;
+    }
+
+    #moreinfo-p:hover {
+        cursor: pointer;
+        filter: brightness(125%);
+    }
+}
+
+/* Bootcamp SCC END */
+
+
+/* Footer CSS START */
+
+/* Footer CSS END */

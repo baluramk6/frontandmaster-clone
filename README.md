@@ -1,2 +1,2 @@
-# frontandmaster-clone
-Masai School construct week group project.
+# frontendmasters-clone
+This is clone of frontendmastres.com

@@ -1,0 +1,88 @@
+#scon{
+display: flex;
+height: 220px;
+margin: 20px 0 0 80px;
+
+}
+#sscon1{
+
+    width: 20%;
+    height: 220px;
+}
+#sscon2{
+width: 70%;
+height: 220px;
+border: 1px solid black;
+margin-left: 10px;
+background-color: rgb(34,34,34);
+    
+}
+#react{
+    width:100%;
+    height: 220px;
+}
+#sintro{
+    font-size: 40px;
+    color: white;
+    margin-left: 10px;
+}
+#simg{
+    width: 70px;
+    height: 70px;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+#snacom{
+    
+    width: 100px;
+    height: 60px;
+    margin: 20px;
+    color: white;
+}
+#sflex{
+    display: flex;
+}
+#simground{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+#stime{
+    color: white;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+#sbox{
+display: flex;
+
+}
+#s1{
+    width: 400px;
+    height: 400px;
+}
+#s11{
+    width: 650px;
+    height: 400px;
+    margin: 20px 0 0 40px; 
+}
+#s2{
+width: 600px;
+height: 400px;
+margin: 50px 0 0 320px;
+
+}
+#sbs{
+    width: 400px;
+    height: 70px;
+    background-color: rgb(192,45,40);
+    color: white;
+    border-radius: 40px;
+    font-size: 20px;
+    border: none;
+}
+p{
+color: white;
+}
+body{
+    background-color: black;
+}

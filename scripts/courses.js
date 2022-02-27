@@ -47,10 +47,17 @@ function allCourses(Allcourses, main) {
         let btn1 = document.createElement("button")
         btn1.id = "btn1"
         btn1.textContent = "Watch Free Preview"
+btn1.addEventListener("click",()=>{
+    window.location.href="coursesnew.html"
+})
 
         let btn2 = document.createElement("button")
         btn2.id = "btn2"
         btn2.textContent = "Get Full Access"
+        btn2.addEventListener("click",()=>{
+            window.location.href="pricing.html"
+        })
+
 
         name_div.append(p_name, company)
         profile_div.append(profile_img, name_div)

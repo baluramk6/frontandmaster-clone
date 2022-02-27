@@ -28,7 +28,7 @@ function formSubmit(event) {
         userInfo.push(userData);
         localStorage.setItem("userDataBase", JSON.stringify(userInfo));
         alert("Signup Completed!")
-        // window.location.href = "login.html";
+        window.location.href = "login.html";
     }
 
     else {

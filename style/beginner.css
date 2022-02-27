@@ -1,0 +1,395 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 100%;
+    margin: auto;
+    /* border: 1px solid red; */
+}
+.fcont{
+    width: 100%;
+    display: flex;
+    margin: auto;
+    /* border: 1px solid blue; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: inherit;
+    background-image: url("https://static.frontendmasters.com/assets/fm/med/learn/background-beginner.jpg");
+    tab-size: 4;
+    color: #e6e6e6;
+    font-family: Open Sans,sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    box-sizing: border-box;
+    min-height: 380px;
+    position: relative;
+}
+.circle{
+    width: 15%;
+    /* background-color: lightgray; */
+    /* border: 1px solid red; */
+    /* height: 150px; */
+    margin: auto;
+    
+}
+.circle-progress
+{
+    transform: rotate(-90deg);
+}
+.text{
+    width: 58%;
+    font-family: Open Sans,sans-serif;
+    color: #e6e6e6;
+    font-size: 16px;
+    line-height: 1.5;
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+    
+}
+.scont{
+    width: 100%;
+    /* border: 1px solid red; */
+    background-color: #222;
+}
+.subcont{
+    width: 80%;
+    margin: auto;
+    /* border: 1px solid white; */
+}
+.pen_image{
+    width: 15%;
+    margin-top: 30px;
+    height: 150px;
+    margin: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: inherit;
+    background-size:150px 150px;
+    filter: brightness(100%);
+    background-image:url('/images/svgexport-15.png');
+}
+.stext{
+    text-align: center;
+    
+    font-family: Open Sans,sans-serif;
+    color: #e6e6e6;
+    font-size: 16px;
+    line-height: 1.5;
+    box-sizing: border-box;
+}
+#learn_path{
+    color: white;
+    margin: auto;
+    text-align: center;
+}
+#image{
+    filter: grayscale(100%);
+    margin: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: inherit;
+    background-size:120px 120px;
+    background-image:url('/images/svgexport-4.png');
+}
+#image1{
+    max-width: auto;
+    height: auto;
+    transform: rotate(-90deg);
+}
+
+#scontainer{
+    background-color: rgb(34,34,34);
+    
+    }
+    
+    /* #div3a{
+        margin-left: 20px;
+    } */
+    #div3b{
+    
+        display: flex;
+    }
+    #div1{
+        
+        display: flex;
+    }
+    #div2{
+        
+        margin-top: 20px;
+        /* border: 1px solid rgb(20, 19, 20);   */
+    }
+    #div3{
+        
+        margin-top: 20px;
+        background-color: black;
+    }
+    
+    #bimage{
+        height: 390px;
+    
+    }
+    #about{
+        margin-left: 20px;
+    }
+    h2{
+     color: #dd625e;
+     cursor: pointer;
+     font-weight: 400;
+     font-size: 27px;
+     font-family: Open Sans,sans-serif;
+     font-size: 25px;
+     margin: 10px 0 0 12px;
+       
+    }
+    #pimage{
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        margin: 20px 0 0 20px;
+    }
+    #div3b2{
+        margin: 40px 0 0 10px;
+        color: wheat;
+        font-family: Open Sans,sans-serif;
+        font-size: 18px;
+    
+    }
+    #div3c{
+        margin: 10px 0 0 12px;
+        color: white;
+        font-family: Open Sans,sans-serif;
+        font-size: 18px;
+    
+    }
+    #time{
+        margin: 15px 0 0 12px;
+        color: rgb(138,138,138);
+        
+    
+    }
+    #div3e{
+    margin: 30px 0 0 12px;
+    
+    }
+    #button1{
+    width: 180px;
+    height: 50px;
+    margin-bottom: 20px;
+    border-radius: 30px;
+    background-color: rgb(192,45,40);
+    color: white;
+    border: none;
+    font-family: Open Sans,sans-serif;
+    cursor: pointer;
+    
+    
+    }
+    #button2{
+        width: 180px;
+        height: 48px;
+        border-radius: 30px;
+        margin-left: 10px;
+        background-color: rgb(201,79,23);
+        color: white;
+        border: none;
+        font-family: Open Sans,sans-serif;
+        font-size: 16px;
+        cursor: pointer;
+        }
+        #company{
+    
+            opacity: 0.6;
+            margin-top: 2px;
+        }
+    #fulldata1{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 450px);
+        margin: auto;
+        margin-top: 30px;
+        grid-gap: 4%;
+        
+    }
+    #fulldata1>div{
+        /* border: 1px solid wheat; */
+        border: 0;
+    
+    }
+    .box1{
+        
+    max-width: 100%;
+    height:100%;
+    margin: auto;
+    opacity: 0.6;
+    margin-right: 21%;
+    margin-left: 0%;
+    background-color: #181818;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-attachment: inherit; */
+    background-size:450px 450px;
+   
+    }
+    #backimage1{
+        background-image:url('/images/5.webp');
+    }
+    #backimage2{
+        background-image:url('/images/6.webp');
+    }
+    #backimage3{
+        background-image:url('/images/8.webp');
+    }
+    #backimage4{
+        background-image:url('/images/7.webp');
+    }
+    #box11{
+        width: 100%;
+        height: 100%;
+        margin-left: 28%;
+        background-color: #181818;
+        opacity: 0.99;
+    }
+    #imgbox{
+        width: 25%;
+        height: 100%;
+        margin-left: 20px;
+        margin-top: 20px;
+        border-radius: 60%;
+        background-image: url("https://static.frontendmasters.com/assets/teachers/kuperman/thumb.webp");
+        background-position: center;
+        background-size: 100px 100px;
+        /* border: 1px solid white; */
+    }
+    #head{
+        -webkit-text-size-adjust: 100%;
+        tab-size: 4;
+        font-family: Open Sans,sans-serif;
+        line-height: 1.5;
+        list-style: none;
+        list-style-image: none;
+        color: #dd625e;
+        box-sizing: border-box;
+        font-size: 21px;
+        font-weight: 400;
+        margin-left: 20px;
+        margin-top: 20px;
+        text-decoration: none;
+        /* padding: 30%; */
+    }
+    #v3box{
+        display: flex;
+        width: 90%;
+        height: 100px;
+        /* border: 1px solid red; */
+    }
+    #jon_name{
+        width: 40%;
+        height: 100px;
+        margin-top: 10%;
+        font-family: Open Sans,sans-serif;
+        font-size: 20px;
+        line-height: 1.5;
+        list-style: none;
+        color: white;
+        text-align: center;
+        /* border: 1px solid yellow; */
+    }
+    #organ{
+        color: lightgray;
+    }
+    .description{
+        -webkit-text-size-adjust: 100%;
+        tab-size: 4;
+        font-family: Open Sans,sans-serif;
+        line-height: 1.5;
+        list-style: none;
+        list-style-image: none;
+        color: #f3eaea;
+        box-sizing: border-box;
+        font-size: 18px;
+        margin-top: 10%;
+        margin-left: 20px;
+    }
+    .meta{
+        -webkit-text-size-adjust: 100%;
+        tab-size: 4;
+        font-family: Open Sans,sans-serif;
+        line-height: 1.5;
+        list-style: none;
+        list-style-image: none;
+        box-sizing: border-box;
+        color: #8a8a8a;
+        font-size: 18px;
+        /* margin: 10px 0; */
+        margin-left: 20px;
+    }
+    .cta{
+        width: 100%;
+        height: 50px;
+        margin-top: 15%;
+        /* border: 1px solid white; */
+    }
+    #Watch_access{
+        width: 100%;
+        /* height: 100%; */
+        padding: 12px;
+        border-radius: 30px;
+        margin-left: 20px;
+        background-color: rgb(192,45,40);
+        color: white;
+        border: none;
+        font-family: Open Sans,sans-serif;
+        cursor: pointer;
+        text-decoration: none;
+    }
+    #Watch_access1{
+        width: 100%;
+        /* height: 100%; */
+        padding: 12px;
+        border-radius: 30px;
+        margin-left: 20px;
+        background-color: rgb(201,79,23);
+        color: white;
+        border: none;
+        font-family: Open Sans,sans-serif;
+        font-size: 16px;
+        cursor: pointer;
+        text-decoration: none;
+    }
+    #mikeimage{
+        
+        width: 25%;
+        height: 100%;
+        margin-left: 20px;
+        margin-top: 20px;
+        border-radius: 60%;
+        background-image: url("https://static.frontendmasters.com/assets/teachers/north/thumb.webp");
+        background-position: center;
+        background-size: 100px 100px;
+        border: 1px solid white;
+    }
+    /* "https://static.frontendmasters.com/assets/teachers/hardaway/thumb.webp" */
+    #jeroimage{
+        width: 25%;
+        height: 100%;
+        margin-left: 20px;
+        margin-top: 20px;
+        border-radius: 60%;
+        background-image: url("https://static.frontendmasters.com/assets/teachers/hardaway/thumb.webp");
+        background-position: center;
+        background-size: 100px 100px;
+        border: 1px solid white;
+    }
+    /* "https://static.frontendmasters.com/assets/teachers/young/thumb.webp" */
+    #jemimage{
+        width: 25%;
+        height: 100%;
+        margin-left: 20px;
+        margin-top: 20px;
+        border-radius: 60%;
+        background-image: url("https://static.frontendmasters.com/assets/teachers/young/thumb.webp");
+        background-position: center;
+        background-size: 100px 100px;
+        border: 1px solid white;
+    }

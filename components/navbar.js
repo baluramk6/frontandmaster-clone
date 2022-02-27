@@ -10,7 +10,7 @@ function navbar() {
         </div>
         <div id="navbar-menu-div">
             <a class="navbar-menu-btn" href="./courses.html">Courses</a>
-            <a class="navbar-menu-btn" href="">Learn</a>
+            <a class="navbar-menu-btn" href="./learnpage.html">Learn</a>
             <a class="navbar-menu-btn" href="./pricing.html">Pricing</a>
             <a class="navbar-menu-btn" href="./login.html">Login</a>
             <a class="navbar-menu-btn" id="navbar-join-btn" href="./pricing.html">Join Now</a>

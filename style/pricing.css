@@ -1,0 +1,400 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Open Sans, sans-serif;
+}
+
+.maincontainer {
+
+    background-color: rgb(34, 34, 34);
+    margin: auto;
+    /* margin-top: 80px; */
+    padding-top: 10px;
+
+}
+
+#master_images {
+    /* width: 1000px; */
+    display: grid;
+    /* border: 1px solid red; */
+    grid-template-columns: repeat(9, 10%);
+    justify-content: center;
+    margin: auto;
+    margin-top: 45px;
+}
+
+@media only screen and (min-width:0px) and (max-width: 420px) {
+    #master_images {
+        grid-template-columns: repeat(3, 15%);
+        justify-content: space-around;
+        margin: auto;
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (min-width:421px) and (max-width: 720px) {
+    #master_images {
+        grid-template-columns: repeat(4, 20%);
+        justify-content: space-around;
+        margin: auto;
+        margin-top: 50px;
+    }
+
+}
+
+#imag {
+    margin: auto;
+}
+
+#master_images img {
+    height: 80px;
+    width: 80px;
+    margin-left: 20px;
+}
+
+.heading {
+    text-align: center;
+    margin: auto;
+    color: #e4e4e4;
+    margin-top: 40px;
+    font-weight: 540;
+    padding: 0px;
+}
+
+h1 {
+    font-size: 46px;
+    display: block;
+    box-sizing: border-box;
+}
+
+h2 {
+    font-size: 31px;
+}
+
+p {
+    margin: auto;
+    text-align: center;
+    margin-top: 20px;
+    color: #e4e4e4;
+    font-size: 18px;
+    margin-top: 40px;
+}
+
+p>a {
+    color: #dd625e;
+    text-decoration: none;
+}
+
+#selected {
+    margin: auto;
+}
+
+#selecttag {
+    display: grid;
+    grid-template-columns: repeat(4, 22%);
+    justify-content: space-around;
+    margin: auto;
+    margin-top: 30px;
+    font-size: 18px;
+    margin-bottom: 40px;
+
+}
+
+.tg1 {
+    color: white;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+
+}
+
+.tg1:hover {
+    border: 1px solid red;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    /* border: none; */
+}
+
+.pflex {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    padding-left: 0px;
+}
+
+.pflex2 {
+    margin-bottom: 25px;
+
+}
+
+#selecttag div {
+    background-color: black;
+    padding-left: 10px;
+}
+
+.rs {
+    /* border: 1px solid red; */
+    width: 60px;
+    margin-right: 2px;
+    text-align: center;
+    background-color: rgb(216, 87, 27);
+}
+
+@media only screen and (min-width:0px) and (max-width: 720px) {
+    #selecttag {
+        grid-template-columns: repeat(1, 100%);
+        margin-top: 20px;
+    }
+
+    .tg1 {
+        margin-top: 20px;
+    }
+
+}
+
+/* form start here  */
+#regform {
+    width: 600px;
+    background-color: black;
+    cursor: pointer;
+    margin: auto;
+    margin-bottom: 50px;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+#subreg {
+    margin-left: 30px;
+}
+
+#regh {
+    color: white;
+    margin-top: 10px;
+}
+
+
+#emailrow {
+    color: white;
+    margin-top: 20px;
+}
+
+#flexname {
+    display: flex;
+    margin-top: 20px;
+}
+
+#name,
+#lastname {
+    background-color: white;
+    border: none;
+    height: 35px;
+    border-radius: 10px;
+    width: 263px;
+    text-align: center;
+}
+
+#namerow2 {
+    margin-left: 10px;
+}
+
+#passrow,
+#passagain {
+    margin-top: 10px;
+}
+
+label {
+    color: white;
+}
+
+.input {
+    background-color: white;
+    height: 35px;
+    width: 535px;
+    border: none;
+    margin-top: 8px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#payoption {
+    margin-top: 10px;
+}
+
+#payoption select {
+    width: 535px;
+    height: 38px;
+    margin-top: 10px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+#payoption select option {
+    width: 535px;
+    /* height: 45px; */
+    font-size: 16px;
+    background-color: white;
+}
+
+#cardnum {
+    margin-top: 20px;
+}
+
+#terms {
+    color: white;
+    font-size: 15px;
+    margin-top: 40px;
+}
+
+#terms a {
+    text-decoration: none;
+    color: rgb(216, 87, 27);
+}
+
+#btn {
+    height: 50px;
+    width: 150px;
+    background-color: rgb(192, 45, 40);
+    margin-top: 20px;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    font-size: 17px;
+}
+
+#btn:hover {
+    background-color: rgb(255, 8, 0);
+    color: white;
+}
+
+.twitter {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.subtwitter {
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    justify-content: space-around;
+    /* background-color: white; */
+}
+
+#twitter1,
+#twitter2,
+#twitter3 {
+
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 20px;
+    border: none;
+
+}
+
+#twitter1 {
+    margin-top: 60px;
+    /* padding-bottom: 20px; */
+    margin-bottom: 80px;
+}
+
+
+#twitter2 {
+    margin-top: 20px;
+    margin-bottom: 45px;
+    /* padding-bottom: 60px; */
+
+}
+
+#twitter3 {
+    margin-top: 50px;
+    padding-bottom: 30px;
+    margin-bottom: 80px;
+}
+
+#t1,
+#t2,
+#t3 {
+    display: flex;
+    margin-top: 30px;
+    /* background-color: white; */
+
+}
+
+.imgsize {
+    width: 50px;
+    /* background-color: white; */
+    border-radius: 50%;
+    margin-left: 20px;
+}
+
+#twitter,
+h4 {
+    /* color: white; */
+    margin-left: 25px;
+    /* background-color: white; */
+}
+
+#twitter,
+h5 {
+    margin-left: 25px;
+    color: gray;
+}
+
+#twitter,
+#comment1 {
+
+    margin-left: 20px;
+    font-size: 17px;
+    text-align: left;
+    color: rgb(110, 108, 108);
+    margin-top: 15px;
+    /* padding-bottom: 30px; */
+    /* border-bottom: 1px solid rgb(97, 96, 96); */
+}
+
+#twitter,
+a {
+    text-decoration: none;
+    color: rgb(101, 195, 245);
+}
+
+@media only screen and (min-width:0px) and (max-width: 720px) {
+    .subtwitter {
+        grid-template-columns: repeat(1, 100%);
+        margin-top: 20px;
+    }
+
+    #twitter1 {
+        padding-bottom: 30px;
+    }
+
+    #twitter2 {
+        padding-bottom: 30px;
+    }
+
+    #twitter3 {
+        padding-bottom: 30px;
+    }
+
+}
+
+#que {
+    width: 100%;
+    display: block;
+    text-align: center;
+    color: white;
+}
+
+h3 {
+    width: 100%;
+    display: block;
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+    padding-bottom: 80px;
+}
+
+h3>a {
+    color: rgb(221, 95, 85);
+
+}

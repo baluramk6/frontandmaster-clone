@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/navbar.css">
+    <link rel="stylesheet" href="./style/footer.css">
+    <link rel="stylesheet" href="./style/coursesnew.css">
+</head>
+
+<body>
+
+    <div id="navbar"></div>
+
+    <div id="scon">
+
+        <div id="sscon1">
+            <img id="react"
+                src="https://static.frontendmasters.com/assets/courses/2021-05-04-complete-react-v6/thumb.webp">
+        </div>
+        <div id="sscon2">
+            <div>
+                <h1 id="sintro">Complete Intro to React, v6</h1>
+            </div>
+
+            <div id="sflex">
+                <div id="simg">
+                    <img id="simground"
+                        src="https://static.frontendmasters.com/assets/teachers/theprimeagen/thumb.webp">
+
+                </div>
+                <div id="snacom">
+                    <h6>ThePrimeagen</h6><br>
+                    <h6>Netflix</h6>
+                </div>
+            </div>
+            <div id="stime">
+                <h5>4 hours, 57 minutes CC</h5>
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <div id="sbox">
+        <div id="s1">
+            <iframe id="s11" width="560" height="315" src="https://www.youtube.com/embed/QFaFIcGhPoM"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+        <div id="s2">
+            <p>Learn to build real-world applications using modern React! Much more than an intro, you’ll start from the
+                ground up, getting to using the latest features in React, including hooks, effects, context, and
+                portals. Throughout the course, you’ll piece together tools from the entire React ecosystem (like
+                Parcel, ESLint, Prettier, and React Router) to build a complete application to browse adoptable pets!
+            </p><br><br>
+            <p>This course and others like it are available as part of our Frontend Masters video subscription.</p><br>
+
+            <p>Published: May 4, 2021</p><br><br>
+ 
+             <p>Learning Paths:ProfessionalReact.js</p><br><br><br>
+
+             <button id="sbs">Get Unlimited Access Now</button>
+
+        </div>
+    </div>
+
+    <div id="footer-section"></div>
+</body>
+
+</html>
+<script type="module">
+
+    import navbar from "./components/navbar.js";
+    let header = document.getElementById("navbar");
+    header.innerHTML = navbar()
+
+
+import footer from "./components/footer.js";
+let footer_div=document.getElementById("footer-section");
+footer_div.innerHTML=footer()
+</script>

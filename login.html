@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login</title>
+  <link rel="stylesheet" href="./style/login.css" />
+  <link rel="stylesheet" href="./style/navbar.css" />
+  <link rel="stylesheet" href="./style/footer.css" />
+</head>
+
+<body>
+  <div id="navbar"></div>
+
+  <div class="container">
+    <div class="box1">
+
+      <form action="">
+        <p style="margin-bottom: 5px">User Name or Email</p>
+        <input  required id="userName" style="margin-bottom: 5px" type="text" placeholder="User Name or Email" />
+        <p style="margin-bottom: 5px">Password</p>
+        <input  required id="pass" type="password" placeholder="Password" />
+        <div id="reme">
+          <input id="checkBox" type="checkbox" />
+          <p>Remember Me</p>
+        </div>
+        <input id="LogInbtn" type="submit" value="Log In" style="margin-bottom: 5px">
+        <a href="">Forgot your password?</a>
+      </form>
+
+    </div>
+  </div>
+
+  <div id="footer"></div>
+</body>
+
+</html>
+<script src="./scripts/login.js"></script>
+<script type="module">
+
+  import navbar from "./components/navbar.js";
+  let header = document.getElementById("navbar");
+  header.innerHTML = navbar();
+
+  import footer from "./components/footer.js";
+  let footer_div = document.getElementById("footer");
+  footer_div.innerHTML = footer();
+</script>

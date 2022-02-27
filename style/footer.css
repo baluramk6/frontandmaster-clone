@@ -1,0 +1,389 @@
+/* Footer CSS START */
+
+#header-main {
+    width: 100%;
+    height: 315px;
+    background-color: #111111;
+    display: flex;
+    align-items: center;
+}
+
+#header-sub {
+    width: 1200px;
+    height: 225px;
+    margin: auto;
+    border: 1px solid palevioletred;
+}
+
+.header-div {
+    width: 100%;
+    height: 33.33%;
+    border: 1px solid transparent;
+    border: 1px solid white;
+}
+
+.header-btn {
+    font-family: sans-serif;
+    font-size: 16px;
+    color: #AAAAAA;
+    margin-left: 25px;
+}
+
+.header-btn:hover {
+    color: white;
+}
+
+#header-btn-div {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    border: 1px solid red;
+}
+
+#header-store-div {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+#playstore-logo {
+    margin-left: 20px;
+}
+
+#header-social-div {
+    height: 40px;
+    display: flex;
+}
+
+#header-social-sub-div-1 {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.social-icon {
+    width: 35px;
+    height: 35px;
+    margin-right: 15px;
+}
+
+#header-social-sub-div-2 {
+    display: flex;
+    align-items: flex-end;
+}
+
+#footer-email {
+    font-family: sans-serif;
+    color: #AAAAAA;
+    margin-left: 315px;
+}
+
+#footer-email-address {
+    font-family: sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+    color: #dd625e;
+}
+
+#copyright-div {
+    border: 1px solid transparent;
+    font-family: sans-serif;
+    font-size: 14px;
+    color: #AAAAAA;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+#copyright-div-right {
+    display: flex;
+}
+
+.copyright-option {
+    margin-left: 15px;
+    color: #AAAAAA;
+}
+
+.hover-1:hover {
+    text-decoration: underline;
+    color: #AAAAAA;
+}
+
+#footer-email-address:hover {
+    text-decoration: underline;
+    color: #dd625e;
+    filter: brightness(125%);
+}
+
+#main-logo {
+    width: 250px;
+    height: 40px;
+    border: 1px solid red;
+}
+
+/* Media Quesries */
+@media only screen and (min-width: 375px) and (max-width: 768px) {
+    #header-main {
+        width: 100%;
+        height: 160px;
+        background-color: #111111;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #header-sub {
+        width: 600px;
+        height: 122px;
+        border: 1px solid transparent;
+    }
+
+    .header-div {
+        width: 100%;
+        height: 33.33%;
+        border: 1px solid transparent;
+    }
+
+    .header-btn {
+        font-family: sans-serif;
+        font-size: 10px;
+        color: #AAAAAA;
+        margin-left: 12.5px;
+    }
+
+    .header-btn:hover {
+        color: white;
+    }
+
+    #header-btn-div {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+    }
+
+    #header-store-div {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+    }
+
+    #playstore-logo {
+        margin-left: 0px;
+    }
+
+    #header-social-div {
+        height: 20px;
+        display: flex;
+    }
+
+    #header-social-sub-div-1 {
+        height: 100%;
+        width: 50%;
+        display: flex;
+        align-items: center;
+    }
+
+    .social-icon {
+        width: 18px;
+        height: 18px;
+        margin-right: 7.5px;
+    }
+
+    #header-social-sub-div-2 {
+        display: flex;
+        align-items: flex-end;
+    }
+
+    #footer-email {
+        font-family: sans-serif;
+        color: #AAAAAA;
+        margin-left: 157.5px;
+    }
+
+    #footer-email-address {
+        font-family: sans-serif;
+        font-size: 8px;
+        text-decoration: none;
+        color: #dd625e;
+    }
+
+    #copyright-div {
+        border: 1px solid transparent;
+        font-family: sans-serif;
+        font-size: 8px;
+        color: #AAAAAA;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 7.5px;
+    }
+
+    #copyright-div-right {
+        display: flex;
+    }
+
+    .copyright-option {
+        margin-left: 7.5px;
+        color: #AAAAAA;
+    }
+
+    .hover-1:hover {
+        text-decoration: underline;
+        color: #AAAAAA;
+    }
+
+    #footer-email-address:hover {
+        text-decoration: underline;
+        color: #dd625e;
+        filter: brightness(125%);
+    }
+
+    #applestore-logo {
+        width: 70px;
+        height: 23px;
+    }
+
+    #playstore-logo {
+        width: 85px;
+        height: 33px;
+    }
+
+    #main-logo {
+        width: 125px;
+        height: 20px;
+    }
+}
+
+/* Screen size 0px to 374px */
+@media only screen and (min-width: 0px) and (max-width: 374px) {
+    #header-main {
+        width: 100%;
+        height: 80px;
+        background-color: #111111;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #header-sub {
+        width: 300px;
+        height: 62px;
+        border: 1px solid transparent;
+    }
+
+    .header-div {
+        width: 100%;
+        height: 33.33%;
+        border: 1px solid transparent;
+    }
+
+    .header-btn {
+        font-family: sans-serif;
+        font-size: 5px;
+        color: #AAAAAA;
+        margin-left: 6.5px;
+    }
+
+    .header-btn:hover {
+        color: white;
+    }
+
+    #header-btn-div {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+    }
+
+    #header-store-div {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+    }
+
+    #playstore-logo {
+        margin-left: 0px;
+    }
+
+    #header-social-div {
+        height: 10px;
+        display: flex;
+    }
+
+    #header-social-sub-div-1 {
+        height: 100%;
+        width: 50%;
+        display: flex;
+        align-items: center;
+    }
+
+    .social-icon {
+        width: 9px;
+        height: 9px;
+        margin-right: 7.5px;
+    }
+
+    #header-social-sub-div-2 {
+        display: flex;
+        align-items: flex-end;
+    }
+
+    #footer-email {
+        font-family: sans-serif;
+        color: #AAAAAA;
+        margin-left: 129px;
+    }
+
+    #footer-email-address {
+        font-family: sans-serif;
+        font-size: 6px;
+        text-decoration: none;
+        color: #dd625e;
+    }
+
+    #copyright-div {
+        border: 1px solid transparent;
+        font-family: sans-serif;
+        font-size: 6px;
+        color: #AAAAAA;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 3.75px;
+    }
+
+    #copyright-div-right {
+        display: flex;
+    }
+
+    .copyright-option {
+        margin-left: 3.75px;
+        color: #AAAAAA;
+    }
+
+    .hover-1:hover {
+        text-decoration: underline;
+        color: #AAAAAA;
+    }
+
+    #footer-email-address:hover {
+        text-decoration: underline;
+        color: #dd625e;
+        filter: brightness(125%);
+    }
+
+    #applestore-logo {
+        width: 35px;
+        height: 12px;
+    }
+
+    #playstore-logo {
+        width: 43px;
+        height: 17px;
+    }
+
+    #main-logo {
+        width: 63px;
+        height: 10px;
+    }
+}
+
+/* Footer SCC END */

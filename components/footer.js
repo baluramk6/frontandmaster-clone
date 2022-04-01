@@ -7,7 +7,7 @@ function footer() {
 
     <div id="header-sub">
         <div class="header-div" id="header-btn-div">
-            <a href=""><img id="main-logo"
+            <a href=""><img id="main-footer-logo"
             src="https://static.frontendmasters.com/assets/fm/js/static/frontendmasters.e1e10b58c1.svg"
             alt=""></a>
            <a class="header-btn" href="./courses.html">Courses</a>

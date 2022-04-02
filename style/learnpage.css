@@ -49,14 +49,28 @@ body {
     text-align: center;
 }
 #line{
-    width: 80%;
-    margin: auto;
+    width: 90%;
+   margin: auto;
 }
+
 .course{
     display: grid;
-    grid-template-columns: repeat(3,304px);
+    grid-template-columns: repeat(3,32%);
+    justify-content: center;
     grid-template-rows: repeat(2, 600px);
     grid-gap: 20px; 
+}
+@media only screen and (min-width:0px) and (max-width:500px){
+    .course{
+     grid-template-columns: repeat(2,15%);
+    }
+    
+}
+@media only screen and (min-width:501px) and (max-width:720px){
+    .course{
+     grid-template-columns: repeat(4,15%);
+    }
+    
 }
 .course>div{
     /* border: 1px solid wheat; */
@@ -76,7 +90,7 @@ body {
 
 .Topic{
     display: grid;
-    grid-template-columns: repeat(3,304px);
+    grid-template-columns: repeat(3,32%);
     grid-template-rows: repeat(4, 600px);
     grid-gap: 20px;
 }

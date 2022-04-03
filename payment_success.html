@@ -38,3 +38,22 @@
 </body>
 
 </html>
+<script type="module">
+    //Signout button remove code
+    var btn1 = localStorage.getItem("btn")
+    console.log(btn1)
+    let getBtn = document.getElementById("logout-btn-div")
+    getBtn.innerHTML = btn1;
+
+    document.getElementById("logout-btn").addEventListener("click", removeB);
+
+    function removeB() {
+        //console.log("removed")
+        //const myTimeout = setTimeout(rmbtn, 3000);
+        var element = document.getElementById("logout-btn-div");
+        element.remove(element);
+        localStorage.removeItem("btn")
+        localStorage.removeItem("loginCheck")
+        window.location.href = "index.html"
+    }
+</script>

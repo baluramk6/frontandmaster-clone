@@ -48,11 +48,13 @@ var twitterData = [{
     Twitter_icon: "https://pngimg.com/uploads/twitter/twitter_PNG9.png",
 }]
 
+let colorArr = ['red', 'blue', 'green', 'gold', 'purple', 'gray', 'orange']
 function showTwitt(main) {
     twitterData.forEach((elem) => {
 
-        let random1 = Math.floor(Math.random() * 10)
-        let random2 = Math.floor(Math.random() * 10)
+        // let random1 = Math.floor(Math.random() * 10)
+        // let random2 = Math.floor(Math.random() * 10)
+        //let rand = Math.floor(Math.random(colorArr.length) * 9)
 
         let main_div = document.createElement("div")
         main_div.id = "main_div"
@@ -76,8 +78,9 @@ function showTwitt(main) {
 
         let image = document.createElement("h1")
         image.id = "image"
-        image.textContent = n[0];
-        image.style.backgroundColor = `#${random1}d${random2}d0d`
+        image.innerHTML = n[0];
+        //image.style.backgroundColor = `#${random1}d${random2}d0d`
+        image.style.backgroundColor = colorArr[Math.floor(Math.random() * colorArr.length)]
 
 
         let icon = document.createElement("img")
@@ -93,7 +96,7 @@ function showTwitt(main) {
         time.textContent = elem.Time
 
         name_div.append(n, user_name)
-        user_div.append(image, name_div, icon)
+        user_div.append(image, name_div)
         twitt_div.append(twitt)
 
         main_div.append(user_div, twitt_div, time)

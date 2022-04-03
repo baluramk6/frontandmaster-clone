@@ -138,67 +138,65 @@
 
         <div id="regform">
             <div id="subreg">
-                <form action="">
+                <h2 id="regh">Register For Monthly Account</h2>
 
-                    <h2 id="regh">Register For Monthly Account</h2>
-                    <div id="emailrow">
-                        <label for="email">Email</label>
-                        <span>(you'll need to confirm this email address)</span><br>
-                        <input type="email" id="emailp" class="input" required>
+                <div id="emailrow">
+                    <label for="email">Email</label>
+                    <span>(you'll need to confirm this email address)</span><br>
+                    <input type="email" id="emailp" name="email" class="input" required="required" autocomplete="off">
+                </div>
+
+
+                <div id="flexname">
+                    <div id="namerow">
+                        <label for="name">First Name</label> <br>
+                        <input type="text" id="name" name="firstname" required="required">
                     </div>
-
-                    <div id="flexname">
-                        <div id="namerow">
-                            <label for="name">First Name</label> <br>
-                            <input type="text" id="name" required>
-                        </div>
-                        <div id="namerow2">
-                            <label for="lastname">Last Name</label><br>
-                            <input type="text" name="" id="lastname" required>
-                        </div>
+                    <div id="namerow2">
+                        <label for="lastname">Last Name</label><br>
+                        <input type="text" name="lastname" id="lastname" required="required">
                     </div>
+                </div>
 
 
-                    <div id="passrow">
-                        <label for="pass">Password</label><br>
-                        <input type="password" id="pass" class="input" required>
-                    </div>
+                <div id="passrow">
+                    <label for="pass">Password</label><br>
+                    <input type="password" id="pass" name="password" class="input" required="required">
+                </div>
 
-                    <div id="passagain">
-                        <label for="passagain">Password Again</label><br>
-                        <input type="password" id="pass2" class="input" required>
-                    </div>
-
-
-
-                    <div id="payoption">
-                        <label>Choose Your Payment Method</label><br>
-                        <select name="" id="seltag">
-                            <option value="">Credit/ Debit Card</option>
-                            <option value="">Paypal</option>
-                        </select>
-                    </div>
+                <div id="passagain">
+                    <label for="passagain">Password Again</label><br>
+                    <input type="password" id="pass2" name="passagain" class="input" required="required">
+                </div>
 
 
-                    <div>
-                        <input type="number" placeholder="Enter Card Number &nbsp MM/YY &nbsp CVV" name="" class="input"
-                            id="cardnum" style="text-align: center;">
-                    </div>
+
+                <div id="payoption">
+                    <label>Choose Your Payment Method</label><br>
+                    <select name="" id="seltag">
+                        <option value="">Credit/ Debit Card</option>
+                        <option value="">Paypal</option>
+                    </select>
+                </div>
 
 
-                    <div id="terms">
-                        By clicking Start Learning, you agree to our <a href="">Terms of Service</a> and <a
-                            href="">Privacy
-                            Policy.</a>
-                    </div>
+                <div>
+                    <input type="number" placeholder="Enter Card Number &nbsp MM/YY &nbsp CVV" name="" class="input"
+                        id="cardnum" name="cardnum" style="text-align: center;" required="required">
+                </div>
 
-                    <button type="submit" id="btn">Start Learning</button>
 
-                    <div>
-                    </div>
-                </form>
+                <div id="terms">
+                    By clicking Start Learning, you agree to our <a href="">Terms of Service</a> and <a href="">Privacy
+                        Policy.</a>
+                </div>
+
+                <button id="btn">Start Learning</button>
+
             </div>
+
         </div>
+
         <!-- end  -->
 
 
@@ -279,18 +277,31 @@
 
 </html>
 
-<script type="module">
+<script src="./scripts/pricing.js"></script>
 
+<script type="module">
     import navbar from "./components/navbar.js"
     let header = document.getElementById("navbar")
     header.innerHTML = navbar();
-
-
-    import formSubmit from "./scripts/pricing.js"
-
-
+    // import formSubmit from "./scripts/pricing.js"
 
     import footer from "./components/footer.js"
     let footer_div = document.getElementById("footer-section")
     footer_div.innerHTML = footer();
+
+    //Logout button remove code 
+    var btn1 = localStorage.getItem("btn")
+    let getBtn = document.getElementById("logout-btn-div")
+    getBtn.innerHTML = btn1;
+
+    document.getElementById("logout-btn").addEventListener("click", removeB);
+
+    function removeB() {
+        var element = document.getElementById("logout-btn-div");
+        element.remove(element);
+        localStorage.removeItem("btn")
+        localStorage.removeItem("loginCheck")
+        window.location.href = "index.html"
+    }
+    //Logout button remove code END
 </script>

@@ -79,7 +79,7 @@ a {
 } */
 
 p {
-  margin-bottom: 30px"
+  margin-bottom: 30px;
 
 }
 
@@ -92,6 +92,7 @@ p {
   color: white;
   font-family: sans-serif;
   font-size: 16px;
+  text-align: center;
 }
 
 #LogInbtn:hover {

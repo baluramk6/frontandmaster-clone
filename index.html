@@ -129,8 +129,29 @@
     let footer_div = document.getElementById("footer-section")
     footer_div.innerHTML = footer();
 
-
     import { showTwitt } from "./scripts/twitter.js"
     let main = document.getElementById("twitter-main")
     showTwitt(main)
+
+
+    //Logout button remove code 
+    var btn1 = localStorage.getItem("btn")
+    let getBtn = document.getElementById("logout-btn-div")
+    getBtn.innerHTML = btn1;
+
+    document.getElementById("logout-btn").addEventListener("click", removeB);
+
+    function removeB() {
+        var element = document.getElementById("logout-btn-div");
+        element.remove(element);
+        localStorage.removeItem("btn")
+        localStorage.removeItem("loginCheck")
+        window.location.href = "index.html"
+    }
+    //Logout button remove code END
+
+
+
+
+
 </script>

@@ -1,12 +1,11 @@
-/* CSS Start for navbar */
-
+/* Nvabar CSS Start */
 @import "./reset.css";
 
 
 #navbar-main-div {
-    width: 100%;
+    max-width: 100%;
     height: 70px;
-    border: 1px solid transparent;
+    border: none;
     background-color: #3D130C;
     display: flex;
 }
@@ -60,6 +59,22 @@
 
 #navbar-join-btn:hover {
     background-color: #d43530;
+}
+
+#logout-btn {
+    height: 40px;
+    width: 107px;
+    background-color: #c02d28;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content: center;
+    border: none;
+}
+#logout-btn:hover{
+    background-color: #d43530;
+    cursor: pointer;
 }
 
 /* Media Queries */

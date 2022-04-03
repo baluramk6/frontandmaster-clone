@@ -12,8 +12,9 @@
 </head>
 
 <body>
+    <header id="header">
 
-    <div id="navbar"></div>
+    </header>
 
     <div id="scon">
 
@@ -65,23 +66,58 @@
 
             <p>Learning Paths:ProfessionalReact.js</p><br><br><br>
 
-            <button id="sbs" onclick=window.location.href="pricing.html">Get Unlimited Access Now</button>
+            <button id="sbs">Get Unlimited Access Now</button>
 
         </div>
     </div>
-
-    <div id="footer-section"></div>
+    <section id="footer-section">
+        <!-- Footer #header-main-div append here -->
+    </section>
 </body>
 
 </html>
 <script type="module">
+    // Navbar import
+    import navbar from "./components/navbar.js"
+    let header = document.getElementById("header")
+    header.innerHTML = navbar();
 
-    import navbar from "./components/navbar.js";
-    let header = document.getElementById("navbar");
-    header.innerHTML = navbar()
+    //Footer import
+    import footer from "./components/footer.js"
+    let footer_div = document.getElementById("footer-section")
+    footer_div.innerHTML = footer();
 
 
-    import footer from "./components/footer.js";
-    let footer_div = document.getElementById("footer-section");
-    footer_div.innerHTML = footer()
+
+
+    var btn2 = document.getElementById("sbs")
+    btn2.addEventListener("click", () => {
+        let login = (localStorage.getItem("loginCheck"))
+        if (login === "true") {
+            window.location.href = "checkout.html";
+        }
+        else {
+            window.location.href = "login.html";
+        }
+    }
+    )
+
+    //Logout button remove code 
+    var btn1 = localStorage.getItem("btn")
+    let getBtn = document.getElementById("logout-btn-div")
+    getBtn.innerHTML = btn1;
+
+    document.getElementById("logout-btn").addEventListener("click", removeB);
+
+    function removeB() {
+        var element = document.getElementById("logout-btn-div");
+        element.remove(element);
+        localStorage.removeItem("btn")
+        localStorage.removeItem("loginCheck")
+        window.location.href = "index.html"
+    }
+    //Logout button remove code END
+
+
+
 </script>

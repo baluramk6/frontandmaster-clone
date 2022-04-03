@@ -324,7 +324,6 @@ a {
     border: 1px solid transparent;
     margin: auto;
     margin-top: 60px;
-
 }
 
 #main_div {
@@ -340,9 +339,13 @@ a {
     height: 30px;
 }
 
-#user_div {
+/* #user_div {
+    width: 50px;
+    height: 50px;
     display: flex;
-}
+    border: 1px solid green;
+
+} */
 
 #twitt {
     font-family: sans-serif;
@@ -358,7 +361,11 @@ a {
     align-items: center;
     font-family: sans-serif;
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+}
+
+#name_div{
+    margin-left: 15px;
 }
 
 #time {
@@ -373,11 +380,14 @@ a {
 }
 
 #image {
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     font-size: 40px;
     font-weight: bold;
     color: white;
     padding: 5px;
+    text-align: center;
 }
 
 #name {

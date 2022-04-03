@@ -55,10 +55,15 @@ function allCourses(Allcourses, main) {
         btn2.id = "btn2"
         btn2.textContent = "Get Full Access"
         btn2.addEventListener("click", () => {
-            window.location.href = "checkout.html"
-        })
+            let login = (localStorage.getItem("loginCheck"))
+            if (login === "true") {
+                window.location.href = "checkout.html";
+            } else {
+                window.location.href = "login.html";
+            }
 
-
+        }
+        )
         name_div.append(p_name, company)
         profile_div.append(profile_img, name_div)
         btn_div.append(btn1, btn2)

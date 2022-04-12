@@ -51,6 +51,11 @@
     import navbar from "./components/navbar.js"
     let header = document.getElementById("navbar")
     header.innerHTML = navbar();
+    
+    //Footer import
+    import footer from "./components/footer.js"
+    let footer_div = document.getElementById("footer-section")
+    footer_div.innerHTML = footer();
 
     import { allPopularcourses } from "./scripts/popular_courses.js"
 
@@ -76,10 +81,6 @@
 
     popularcoursesData();
     allPopularcourses(AllPopularcourses, container)
-
-    import footer from "./components/footer.js"
-    let footer_div = document.getElementById("footer-section")
-    footer_div.innerHTML = footer();
 
     //Logout button remove code 
     var btn1 = localStorage.getItem("btn")

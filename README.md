@@ -1,7 +1,9 @@
 # frontandmaster-clone
 Masai School construct week group project.
 <h1>Frontend Master-Clone</h1>
-FrontendMasters, which is a online educational platform providing courses on frontend technologies ,coding languages and many more in the similar field. As per reviews from users across the globe, their content is apt for students to learn.
+
+As a part of the construct week program at Masai School we created clone of Frontend Masters. Basically, we used HTML, CSS, JavaScript, node.js, Express and MongoDB. we created a login, signup, pricing, courses and checkout page. we also worked on backend for storing user data in atlas with the help of Express, mongoose and MongoDB. Now users can easily register, login and signup with our website.
+
 <h1>collaborators:</h1>
 <ul> 
   <li><a href="https://github.com/baluramk6">Ballu Ram Kumawat</a> </li>

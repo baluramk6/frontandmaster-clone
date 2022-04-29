@@ -16,7 +16,7 @@ FrontendMasters, which is a online educational platform providing courses on fro
 <img src="https://camo.githubusercontent.com/8b655816e545717df226aafd335fa658149deb52064a3b91181b9f9f0e443322/68747470733a2f2f696d672e69636f6e73382e636f6d2f636f6c6f722f36342f3030303030302f637373332e706e67"/>
 <img src="https://camo.githubusercontent.com/ecc13d5d24244308f601ac3d528a6cb20dc09c914a4b310472cf39adf3ebc8d3/68747470733a2f2f696d672e69636f6e73382e636f6d2f636f6c6f722f36342f3030303030302f6a736f6e2e706e67"/>
 </div>
-<h1>Features:<h1/>
+<h3>Features:<h3/>
   <ol>
     <li>Homepage</li>
     <li>Sign up</li>
@@ -25,7 +25,7 @@ FrontendMasters, which is a online educational platform providing courses on fro
      <li>All Popular Courses</li>
      <li>Payment page</li>
   </ol>
-  <h1>Snapshots of our project</h1>
+  <h3>Snapshots of our project</h3>
   <p>HomePage</p>
    <img src="https://miro.medium.com/max/1400/1*aHCxBodwmwxq0YkQECGh3w.jpeg"/>
   <p>Sign Up page</p>

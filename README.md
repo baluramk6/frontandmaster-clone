@@ -7,7 +7,7 @@ FrontendMasters, which is a online educational platform providing courses on fro
   <li><a href="https://github.com/baluramk6">Ballu Ram Kumawat</a> </li>
   <li><a href="https://github.com/Chandrakant121">Chandrakant S Joshi</a></li>
   <li><a href="https://github.com/keshavGaur053">Keshav Gaur</a></li>
-  <li><a href="https://github.com/manjari5506">Manjari Raikwar/a></li>
+  <li><a href="https://github.com/manjari5506">Manjari Raikwar</a></li>
 </ul>
 <h1>Tech Stack</h1>
 <div display="flex">

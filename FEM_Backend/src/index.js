@@ -1,6 +1,9 @@
 const express = require("express");
 const app = express();
 const cors = require("cors");
+const { register, login } = require("./controllers/auth.controller");
+const coursesController = require("./controllers/courses.controller");
+
 app.use(cors());
 
 
@@ -11,12 +14,10 @@ app.use(function (req, res, next) {
 
 app.use(express.json());
 
-const { register, login } = require("./controllers/auth.controller");
 
 app.post("/register", register);
 app.post("/login", login);
 
-const coursesController = require("./controllers/courses.controller");
 
 app.use("/courses", coursesController);
 

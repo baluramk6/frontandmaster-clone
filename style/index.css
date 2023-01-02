@@ -24,7 +24,7 @@
 }
 
 #gray {
-  width: 100%;
+  width: 100vw;
   z-index: 1;
   position: absolute;
   bottom: 0;

@@ -20,9 +20,9 @@ const register = async (req, res) => {
 
     //if user not register create new user and post data
     user = await User.create(req.body);
-
     const token = generateToken(user);
     return res.status(200).send({ user: user, token: token, status: true });
+
   } catch (err) {
     res.status(400).send({ message: err.message });
   }

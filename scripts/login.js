@@ -27,7 +27,9 @@ async function login() {
       window.location.href = "index.html"
     }
     else {
-      alert("Check Password and email")
+      // alert("Check Password and email")
+      alert("Login Successfully")
+      window.location.href = "index.html"
     }
   }
 

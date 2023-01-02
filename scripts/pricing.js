@@ -33,7 +33,9 @@ async function register() {
         }
         else {
             // if email exists then alert and after 3 sec page reload
-            alert("Email already exists")
+            // alert("Email already exists")
+            alert("SignUp Successfully")
+            window.location.href = "login.html"
             setTimeout(() => { location.reload(); }, 3000);
         }
 

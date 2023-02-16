@@ -1,6 +1,7 @@
 document.querySelector("#btn").addEventListener("click", () => {
     register();
 })
+
 async function register() {
     try {
         let registerData = {
@@ -11,12 +12,10 @@ async function register() {
             confirmpassword: document.querySelector("#pass2").value,
             cardnumber: document.querySelector("#cardnum").value,
         };
-        // console.log(registerData)
+
         registerData = JSON.stringify(registerData);
-        // console.log(registerData)
 
-
-        let res = await fetch("http://localhost:2323/register", {
+        let res = await fetch("https://victorious-cod-boot.cyclic.app/register", {
             method: "POST",
             body: registerData,
             headers: {
@@ -25,7 +24,6 @@ async function register() {
         });
 
         let user = await res.json();
-        // console.log("user:", user);
 
         if (user.status) {
             alert("SignUp Successfully")
@@ -33,9 +31,7 @@ async function register() {
         }
         else {
             // if email exists then alert and after 3 sec page reload
-            // alert("Email already exists")
-            alert("SignUp Successfully")
-            window.location.href = "login.html"
+            alert("Email already exists")
             setTimeout(() => { location.reload(); }, 3000);
         }
 

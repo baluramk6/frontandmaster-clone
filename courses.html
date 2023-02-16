@@ -63,22 +63,17 @@
     // API CALL FROM BACKEND-->
     let coursesData = async () => {
         try {
-            let res = await fetch("http://localhost:2323/courses");
-
+            let res = await fetch("https://victorious-cod-boot.cyclic.app/courses");
             let data = await res.json();
-
             console.log(data);
-
             allCourses(data, main);
         } catch (err) {
             console.log(err);
         }
     };
-
     coursesData();
 
     let main = document.getElementById("course-item-main");
-
 
     //Logout button remove code 
     var btn1 = localStorage.getItem("btn")

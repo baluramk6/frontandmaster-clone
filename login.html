@@ -16,8 +16,6 @@
 
   <div class="container">
     <div class="box1">
-
-
       <p style="margin-bottom: 5px">User Name or Email</p>
       <input required id="userName" style="margin-bottom: 5px" type="text" placeholder="User Name or Email" />
       <p style="margin-bottom: 5px">Password</p>
@@ -26,10 +24,8 @@
         <input id="checkBox" type="checkbox" />
         <p>Remember Me</p>
       </div>
-      <input id="LogInbtn" value="Log In" style="margin-bottom: 5px">
+      <input id="LogInbtn" value="Log In" style="margin-bottom: 5px" />
       <a href="">Forgot your password?</a>
-
-
     </div>
   </div>
 
@@ -37,13 +33,15 @@
 </body>
 
 </html>
+
 <script src="./scripts/login.js"></script>
 <script type="module">
-
+  //Import header
   import navbar from "./components/navbar.js";
   let header = document.getElementById("navbar");
   header.innerHTML = navbar();
 
+  //Import footer
   import footer from "./components/footer.js";
   let footer_div = document.getElementById("footer");
   footer_div.innerHTML = footer();
